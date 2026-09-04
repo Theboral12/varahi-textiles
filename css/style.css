@@ -2302,3 +2302,63 @@ section {
     }
 }
 
+/* =====================================================
+   WHATSAPP BUTTON
+   ===================================================== */
+
+.whatsapp-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 13px 18px;
+
+    background: #1f1f1f;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: 1px solid #9a783e;
+    border-radius: 4px;
+
+    font-size: 14px;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    z-index: 9999;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-button span {
+    font-size: 18px;
+}
+
+.whatsapp-button strong {
+    font-weight: 500;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 600px) {
+
+    .whatsapp-button {
+        right: 16px;
+        bottom: 16px;
+
+        padding: 12px 15px;
+    }
+
+    .whatsapp-button strong {
+        font-size: 13px;
+    }
+}
+
